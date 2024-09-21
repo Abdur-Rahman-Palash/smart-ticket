@@ -165,7 +165,7 @@
                             <button class="btn bg-[#1DD100]"><i class="fa-solid fa-chair"></i> 40 seats left</button>
                         </div>
                     </div>
-                    <div class= px-4 py-4 w-[700px] rounded-lg">
+                    <div class= "px-4 py-4 w-[700px] rounded-lg">
                         <div class="flex  justify-between items-center gap-8 border-b-2 border-b-gray-300 border-dashed p-4mt-4">
                             <h4>Route</h4>
                             <h4>Dhaka-Sylhet</h4>
@@ -206,46 +206,46 @@
         <button class="btn"><img src="./images/seat-gray.png" alt=""></button>
     </div>
     <div class="grid grid-cols-4 gap-4 px-6 py-6">
-        <button onclick="seatHandle(this)" class="btn" type="button">A</button>
-        <button class="btn">A1</button>
-        <button class="btn">C</button>
-        <button class="btn">D</button>
-        <button class="btn">E</button>
-        <button class="btn">F</button>
-        <button class="btn">G</button>
-        <button class="btn">H</button>
-        <button class="btn">I</button>
-        <button class="btn">J</button>
-        <button class="btn">A1</button>
-        <button class="btn bg-[#1DD100]">B1</button>
-        <button class="btn">C1</button>
-        <button class="btn">D1</button>
-        <button class="btn">E1</button>
-        <button class="btn">G1</button>
-        <button class="btn">H1</button>
-        <button class="btn">I1</button>
-        <button class="btn">J1</button>
-        <button class="btn">A2</button>
-        <button class="btn">B2</button>
-        <button class="btn">C2</button>
-        <button class="btn">D2</button>
-        <button class="btn">E2</button>
-        <button class="btn bg-[#1DD100]">F2</button>
-        <button class="btn">G2</button>
-        <button class="btn">H2</button>
-        <button class="btn">I2</button>
-        <button class="btn">J2</button>
-        <button class="btn">A3</button>
-        <button class="btn">B3</button>
-        <button class="btn">C3</button>
-        <button class="btn">D3</button>
-        <button class="btn">E3</button>
-        <button class="btn">F3</button>
-        <button class="btn">G3</button>
-        <button class="btn bg-[#1DD100]">H3</button>
-        <button class="btn">I3</button>
-        <button class="btn">J3</button>
-        <button class="btn">j4</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">A</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">A1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">C</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">D</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">E</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">F</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">G</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">H</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">I</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">J</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">A1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">B1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">C1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">D1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">E1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">G1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">H1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">I1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">J1</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">A2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">B2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">C2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">D2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">E2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">F2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">G2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">H2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">I2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">J2</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">A3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">B3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">C3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">D3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">E3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">F3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">G3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">H3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">I3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">J3</button>
+        <button onclick="seatHandle(this)"  type="button" class="btn">j4</button>
     </div>
 </div>
 </div>
@@ -253,13 +253,14 @@
     <h3>Select your seat</h3>
     <div>
         <div class="flex justify-between mt-3">
-            <p>Seat</p>
+            <p class="flex">
+                <span>Seat</span>
+                <span id="total-booked" class="bg-primary w-2 h-2 p-2 text-sm rounded-full flex justify-center items-center text-white">0</span></p>
             <p>Class</p>
             <p>Price</p>
         </div>
         <div class="border-b-2 border-b-gray-300 border-dashed p-4"></div>
             <ul id="selected-seat" class="space-y-5">
-                <p class="text-3xl font-semibold text bg-center">No seat Booked</p>
             </ul>
         <div class="border-b-2 border-b-gray-300 border-dashed p-4"></div>
         <div class="flex justify-between mt-3">
